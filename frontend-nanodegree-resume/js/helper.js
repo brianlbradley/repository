@@ -66,7 +66,7 @@ The International Name challenge in Lesson 2 where you'll create a function that
 $(document).ready(function() {
   $('button').click(function() {
     var iName = inName() || function(){};
-    $('#name').html(iName);  
+    $('#name').html(iName);
   });
 });
 
@@ -106,13 +106,38 @@ function initializeMap() {
 
   var locations;
 
+
+
   var mapOptions = {
-    disableDefaultUI: true
+
+    disableDefaultUI: true,
+    zoom: 10,
   };
+
+
+
+
 
   // This next line makes `map` a new Google Map JavaScript Object and attaches it to
   // <div id="map">, which is appended as part of an exercise late in the course.
   map = new google.maps.Map(document.querySelector('#map'), mapOptions);
+var contentString = '<div id="map">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h1 id="firstHeading" class="firstHeading">Birmingham</h1>'+
+      '<div id="bodyContent">'+
+      '<p><b>Birmingham</b>, also referred to as <b>The Magic City</b>, started ' +
+      'as a steel city. Now it is a hub for many industries '+
+      'The best part is that its a short drive to Lake Logan Martin.  '+
+      'You might find me there when i am not working magic in the city! '+
+      '</p>'+
+      ' <a href="https://en.wikipedia.org/wiki/Logan_Martin_Lake">'+
+      'https://en.wikipedia.org/w/index.php?title=Logan Logan_Martin_Lake</a> '+
+      '(last visited June 22, 2009).</p>'+
+      '</div>'+
+      '</div>';
+
+
 
 
   /*
@@ -166,11 +191,12 @@ function initializeMap() {
     // or hover over a pin on a map. They usually contain more information
     // about a location.
     var infoWindow = new google.maps.InfoWindow({
-      content: name 
+      content: contentString
     });
 
     // hmmmm, I wonder what this is about...
     google.maps.event.addListener(marker, 'click', function() {
+
       infoWindow.open(map,marker);
     });
 
