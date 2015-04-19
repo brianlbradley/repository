@@ -56,11 +56,11 @@ var education = {
       },
       {
          "name": "Jefferson State Community College",
-         "location": "Birmingham, AL",
+         "location": "Lake Logan Martin, AL",
          "degree": "",
          "major": "Business",
          "minor": "English",
-         "GradYear ":1995
+         "GradYear": 1995
       }
    ],
    "onlineCourses":[
@@ -123,7 +123,7 @@ var work = {
          "position": "Forecasting Manager",
          "location": "Birmingham AL",
          "dates": "June, 2011 - Present",
-         "description": "Create, design, and implement forecasts for 30 + call centers in various locations in the U.S and abroad. Multiple Forecasts consist of monthly, weekly, daily, and hourly volume along with AHT projections."
+         "description": "Create, design, and implement forecasts for 30 + call centers in various locations in the U.S and abroad. Multiple Forecasts consist of monthly, weekly, daily, and hourly volume. Analyze historical trends with AHT and Volume to predict future volumes.  Design shift alignment to meet calling patterns."
       },
       {
          "employer": "at&t",
@@ -135,7 +135,7 @@ var work = {
       {
          "employer": "Compass Bank",
          "position": "Customer Service Representative",
-         "location": "Richardson, TX",
+         "location": "Birmingham, AL",
          "dates": "March, 2002 - February,2005",
          "description": "Disseminated customer banking information for deposit and loan accounts. Upsold customers for new services including installment loans,PC Banking, and Certificates of Deposit."
       }
@@ -144,8 +144,8 @@ var work = {
 
 "display": function () {
     for (job in work.jobs) {
-  	$("#workExperience").append(HTMLworkStart);
-  	var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[job].employer);
+    $("#workExperience").append(HTMLworkStart);
+    var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[job].employer);
     var formattedTitle = HTMLworkTitle.replace("%data%", work.jobs[job].position);
     var formattedEmployerTitle = formattedEmployer + formattedTitle;
     $(".work-entry:last").append(formattedEmployerTitle);
@@ -164,7 +164,7 @@ var projects = {
    "projects":[{
 
          "title": "Forecast Modeling",
-         "description": "Created Forecast Models for 33 Call Centers. Models include monthly, weekly, and hourly volume distributions.",
+         "description": "Created Forecast Models for 33 Call Centers. Models include Access database, pivot tables, SQL queries, and allocation tables. Models are used to predict monthly, weekly, and hourly volume distributions. Designed and implemented new Forecast Predictor, which increased forecast accuracy by 11%. Predictor uses day of week typing to match future projections.",
          "year":2014
       },
       {
