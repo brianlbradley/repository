@@ -194,6 +194,21 @@ span {
   }
 }
 
+@media only screen and (max-width: 500px) {
+  #letsConnect {
+    margin-top: 10%;
+  }
+  .biopic {
+    width: 100px;
+  }
+  .welcome-message {
+    display: none;
+  }
+  .tabs {
+    padding: 3px 1em;
+  }
+}
+
 #map {
   display: block;
   height: 100%;
