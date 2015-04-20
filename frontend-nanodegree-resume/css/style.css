@@ -199,7 +199,7 @@ span {
     margin-top: 10%;
   }
   .biopic {
-    width: 100px;
+    display:none;
   }
   .welcome-message {
     display: none;
@@ -207,6 +207,10 @@ span {
   .tabs {
     padding: 3px 1em;
   }
+  .orange-text {
+    display: block;
+  }
+
 }
 
 #map {
