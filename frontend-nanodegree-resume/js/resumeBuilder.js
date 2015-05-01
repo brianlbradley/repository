@@ -60,7 +60,7 @@ var education = {
          "degree": "",
          "major": "Business",
          "minor": "English",
-         "GradYear ":1995
+         "GradYear": 1995
       }
    ],
    "onlineCourses":[
