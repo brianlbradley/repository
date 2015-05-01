@@ -7,7 +7,7 @@ var bio = {
       "github": "brianlbradley",
       "location": "Birmingham, AL"
    },
-   "message":"Thanks for visiting my page!",
+   "message":"Live for the moment. A moment is only an eternity away.",
    "skills":[
       "Forecasting",
       "SQL",
@@ -56,11 +56,11 @@ var education = {
       },
       {
          "name": "Jefferson State Community College",
-         "location": "Lake Logan Martin, AL",
+         "location": "Birmingham, AL",
          "degree": "",
          "major": "Business",
          "minor": "English",
-         "GradYear": 1995
+         "GradYear ":1995
       }
    ],
    "onlineCourses":[
@@ -123,20 +123,20 @@ var work = {
          "position": "Forecasting Manager",
          "location": "Birmingham AL",
          "dates": "June, 2011 - Present",
-         "description": "Create, design, and implement forecasts for 30 + call centers in various locations in the U.S and abroad. Multiple Forecasts consist of monthly, weekly, daily, and hourly volume. Analyze historical trends with AHT and Volume to predict future volumes.  Design shift alignment to meet calling patterns."
+         "description": "Create, design, and implement forecasts for 30 + call centers in various locations in the U.S and abroad. Multiple Forecasts consist of monthly, weekly, daily, and hourly volume along with AHT projections."
       },
       {
          "employer": "at&t",
-         "position": "Systems Manager",
+         "position": "System Project Manager",
          "location": "Birmingham AL",
-         "dates": "February, 2005 - June, 2011",
+         "dates": "February, 1999 - June, 2011",
          "description": "Project Managed the ordering and maintenance Systems for a module of 250 customers. Migrated customers off expiring systems and implemented customers on new systems. Gave site presentations and conducted business analysis to determine best interface for customer. Trained customers using interactive demonstrations on how to utilize systems."
       },
       {
          "employer": "Compass Bank",
          "position": "Customer Service Representative",
-         "location": "Birmingham, AL",
-         "dates": "March, 2002 - February,2005",
+         "location": "Richardson, TX",
+         "dates": "March, 1997 - February,1999",
          "description": "Disseminated customer banking information for deposit and loan accounts. Upsold customers for new services including installment loans,PC Banking, and Certificates of Deposit."
       }
    ],
@@ -144,8 +144,8 @@ var work = {
 
 "display": function () {
     for (job in work.jobs) {
-    $("#workExperience").append(HTMLworkStart);
-    var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[job].employer);
+  	$("#workExperience").append(HTMLworkStart);
+  	var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[job].employer);
     var formattedTitle = HTMLworkTitle.replace("%data%", work.jobs[job].position);
     var formattedEmployerTitle = formattedEmployer + formattedTitle;
     $(".work-entry:last").append(formattedEmployerTitle);
@@ -164,7 +164,7 @@ var projects = {
    "projects":[{
 
          "title": "Forecast Modeling",
-         "description": "Created Forecast Models for 33 Call Centers. Models include Access database, pivot tables, SQL queries, and allocation tables. Models are used to predict monthly, weekly, and hourly volume distributions. Designed and implemented new Forecast Predictor, which increased forecast accuracy by 11%. Predictor uses day of week typing to match future projections.",
+         "description": "Created Forecast Models for 33 Call Centers. Models include monthly, weekly, and hourly volume distributions.",
          "year":2014
       },
       {
@@ -220,6 +220,7 @@ function inName(name)  {
 };
 
 $("#main").append(internationalizeButton);
+
 
 
 
